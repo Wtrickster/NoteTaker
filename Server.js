@@ -1,16 +1,16 @@
-// Dependencies
+//dependence
 const express = require('express');
 
 //setup ports
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// /public line is needed in order to access CSS files properly
+//public line
 app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Routes
+//routes
 require('./routes/apiroutes')(app);
 require('./routes/htmlroutes')(app);
 

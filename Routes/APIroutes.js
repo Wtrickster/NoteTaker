@@ -16,9 +16,9 @@ module.exports = (app) => {
             if (err) { console.err(err) } else {
                 res.json(JSON.parse(data));
 
-            }
-        })
-    })
+            };
+        });
+    });
 
 
     // Get items from db.json based on the ID's; response given in JSON format
@@ -33,11 +33,11 @@ module.exports = (app) => {
                 for (let i = 0; i < dbJSON.length; i++) {
                     if (noteId === dbJSON[i].id) {
                         return res.json(dbJSON[i]);
-                    }
-                }
-            }
-        })
-    })
+                    };
+                };
+            };
+        });
+    });
 
 
     // Post - Create a new Note after clicking the Save Button
@@ -88,9 +88,9 @@ module.exports = (app) => {
                             // respond with the latest updated array
                             res.json(notesDb);
                         });
-                    }
-                }
-            }
+                    };
+                };
+            };
         });
     });
-}
+};

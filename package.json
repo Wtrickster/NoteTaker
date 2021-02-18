@@ -1,26 +1,26 @@
-  {
-      "name": "note-taker",
-      "version": "1.0.0",
-      "description": "Express Note Taking App ",
-      "main": "server.js",
-      "scripts": {
-          "test": "echo \"Error: no test specified\" && exit 1",
-          "start": "node server.js"
-      },
-      "author": "Joseph Penland",
-      "license": "MIT",
-      "dependencies": {
-          "express": "^4.17.1",
-          "fs": "0.0.1-security",
-          "uniqid": "^5.2.0"
-      },
-      "devDependencies": {},
-      "repository": {
-          "type": "git",
-          "url": "git+https://github.com/Wtrickster/NoteTaker.git"
-      },
-      "bugs": {
-          "url": "https://github.com/Wtrickster/NoteTaker/issues"
-      },
-      "homepage": "https://github.com/Wtrickster/NoteTaker#readme"
-  }
+{
+    "name": "note-taker",
+    "version": "1.0.0",
+    "description": "Express Note Taking App ",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Joseph Penland",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "fs": "0.0.1-security",
+        "uniqid": "^5.2.0"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Wtrickster/NoteTaker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Wtrickster/NoteTaker/issues"
+    },
+    "homepage": "https://github.com/Wtrickster/NoteTaker#readme"
+}

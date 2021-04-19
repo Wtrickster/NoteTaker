@@ -1,16 +1,24 @@
 {
-  "name": "note-taker",
+  "name": "notetaker",
   "version": "1.0.0",
-  "description": "",
+  "description": "A NoteTaker App",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Joseph",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
-    "prettier": "^2.0.5"
-  }
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "uniqid": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wtrickser/NoteTaker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wtrickser/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/Wtrickser/NoteTaker#README"
 }

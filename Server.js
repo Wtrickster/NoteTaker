@@ -1,21 +1,21 @@
 // Dependencies
-const express = require('express');
+const express = require("express");
+const path = require("path");
+const fs = require("fs");
 
-// Set up express
+// Initialize express app
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// /public line is needed in order to access CSS files properly
-app.use(express.static(__dirname + '/public'));
-app.use(express.urlencoded({ extended: true }));
+// Setup data parsing
+app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-// Routes
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+//Require routes file
+require('./routes/routes')(app);
 
-
-
-app.listen(PORT, () => {
-    console.log(`Listening on PORT ${PORT}`);
+// Setup listener
+app.listen(PORT, function() {
+    console.log(`Now listening to port ${PORT}. Let the good times roll!`);
 })

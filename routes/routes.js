@@ -1,14 +1,13 @@
-
 // Dependencies
 const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 const router = require ("express").Router();
 // Routing
-const mainDir = path.join(__dirname, "../public");
+
     // Below code handles when users "visit" a page.
     router.get("/notes", function(req, res) {
-        res.sendFile(path.join(mainDir, "notes.html"));
+        res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
 
     router.get("/api/notes", function(req, res) {
@@ -18,11 +17,6 @@ const mainDir = path.join(__dirname, "../public");
     router.get("/api/notes/:id", function(req, res) {
         let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
         res.json(savedNotes[Number(req.params.id)]);
-    });
-
-    // Catch all other GET requests not defined above
-    router.get("*", function(req, res) {
-        res.sendFile(path.join(mainDir, "index.html"));
     });
 
     // API POST Requests
@@ -51,5 +45,10 @@ const mainDir = path.join(__dirname, "../public");
         fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
         res.json(savedNotes);
     })
+
+    // Catch all other GET requests not defined above
+    router.get("*", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+    });
 
 module.exports = router;

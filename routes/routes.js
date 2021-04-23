@@ -3,34 +3,31 @@
 const fs = require('fs');
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
-
+const router = require ("express").Router();
 // Routing
-const mainDir = path.join(__dirname, "/../public");
-
-module.exports = function (app) {
-    // API GET Requests
+const mainDir = path.join(__dirname, "../public");
     // Below code handles when users "visit" a page.
-    app.get("/notes", function(req, res) {
-        res.sendFile(path.join(mainDir, "/notes.html"));
+    router.get("/notes", function(req, res) {
+        res.sendFile(path.join(mainDir, "notes.html"));
     });
 
-    app.get("/api/notes", function(req, res) {
+    router.get("/api/notes", function(req, res) {
         res.sendFile(path.join(__dirname, "../db/db.json"));
     });
 
-    app.get("/api/notes/:id", function(req, res) {
+    router.get("/api/notes/:id", function(req, res) {
         let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
         res.json(savedNotes[Number(req.params.id)]);
     });
 
     // Catch all other GET requests not defined above
-    app.get("*", function(req, res) {
+    router.get("*", function(req, res) {
         res.sendFile(path.join(mainDir, "index.html"));
     });
 
     // API POST Requests
     // Below code handles when users "saves" a note.
-    app.post("/api/notes", function(req, res) {
+    router.post("/api/notes", function(req, res) {
         let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
         let newNote = req.body;
         newNote.id = uuidv4();
@@ -43,7 +40,7 @@ module.exports = function (app) {
 
     // API DELETE Request
     // Below code handles when users "deletes" a saved note.
-    app.delete("/api/notes/:id", function(req, res) {
+    router.delete("/api/notes/:id", function(req, res) {
         let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
         let noteID = req.params.id;
         console.log(`Deleting note with ID ${noteID}`);
@@ -54,4 +51,5 @@ module.exports = function (app) {
         fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
         res.json(savedNotes);
     })
-}
+
+module.exports = router;

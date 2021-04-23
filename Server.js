@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const routes = require("./routes/routes")
 
 // Initialize express app
 const app = express();
@@ -12,8 +13,8 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-//Require routes file
-require('./routes/routes')(app);
+//get routes file
+app.use('/', routes);
 
 // Setup listener
 app.listen(PORT, function() {

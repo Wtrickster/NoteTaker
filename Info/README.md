@@ -1,5 +1,8 @@
   # NoteTaker
   
+  ![GitHub](https://img.shields.io/badge/license-MIT-purple?style=plastic) [GitHub](https://github.com/Wtrickser/NoteTaker)
+  
+  
   ## **Description**
 
   * AS A small business owner
@@ -7,6 +10,7 @@
     SO THAT I can organize my thoughts and keep track of tasks I need to complete
   
   * Notes can be writen, save, and/or deleted with this app
+  
   
   ## Table of Contents
   * [Description](#Description)
@@ -34,14 +38,6 @@
   No guidelines or restrictions
 
   
-  ## **License**
-  
-  ![GitHub](https://img.shields.io/badge/license-MIT-purple?style=plastic)
-
-  
   ## **Questions**
   
-  [GitHub](https://github.com/Wtrickser/NoteTaker)
-  
-  
-  Questions or issues, contact wtrickster at JSPenland97@gmail.com.
+  Questions or issues, contact wtrickster at JSPenland97@gmail.com

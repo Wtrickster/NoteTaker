@@ -15,6 +15,7 @@
   * [Installation](#Installation)
   * [Usage](#Usage)
   * [Contributions](#contributions)
+  * [Credits](#Credits)
   * [Technologies](#Technologies)
   * [Questions](#Questions)
   
@@ -52,6 +53,12 @@
   * Please make sure to update tests as appropriate.
 
 
+  ## **Credits**
+  
+  * Front End Developer: Joseph
+  * Back End Developer: Joseph
+  
+  
   ## **Technologies**
   
   * Express

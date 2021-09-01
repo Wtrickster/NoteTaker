@@ -1,6 +1,6 @@
   # NoteTaker
   
-  ![GitHub](https://img.shields.io/badge/license-MIT-purple?style=plastic) [GitHub](https://github.com/Wtrickser/NoteTaker)
+  ![GitHub](https://img.shields.io/badge/license-MIT-purple?style=plastic)
   
   
   ## **Description**
@@ -39,5 +39,7 @@
 
   
   ## **Questions**
+  
+  [GitHub](https://github.com/Wtrickser/NoteTaker)
   
   Questions or issues, contact wtrickster at JSPenland97@gmail.com

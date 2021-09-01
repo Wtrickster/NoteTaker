@@ -21,7 +21,14 @@
   
   ## **Installation**
   
-  Run Command Line "npm install"
+  To install the project follow these steps:
+
+   1. Clone the application from GitHub with:
+    * git clone [https://github.com/Wtrickser/NoteTake]
+   2. From the root folder, install the dependencies with:
+    * npm install
+   3. Run the app with:
+    * node server.js
   
   
   ## **Usage**

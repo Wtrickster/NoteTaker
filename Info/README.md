@@ -26,7 +26,7 @@
   
   ![Screenshot 1](Pic1.png)
   
-  mrpen-notetaker.herokuapp.com/
+  www.mrpen-notetaker.herokuapp.com/
   
   
   ## **Contributions**

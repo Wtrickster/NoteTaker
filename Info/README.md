@@ -1,15 +1,17 @@
   # NoteTaker
-
-  AS A small business owner
-  I WANT to be able to write and save notes
-  SO THAT I can organize my thoughts and keep track of tasks I need to complete
   
+  ## **Description**
+
+  * AS A small business owner
+    I WANT to be able to write and save notes
+    SO THAT I can organize my thoughts and keep track of tasks I need to complete
+  
+  * Notes can be writen, save, and/or deleted with this app
   
   ## Table of Contents
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
-  * [Testing](#tests)
   * [Contributions](#contributions)
   * [License](#license)
   * [Questions](#Questions)
@@ -21,19 +23,15 @@
   
   
   ## **Usage**
-
-  Notes can be writen, save, and/or deleted with this app
   
   ![Screenshot 1](Pic1.png)
+  
+  mrpen-notetaker.herokuapp.com/
+  
   
   ## **Contributions**
   
   No guidelines or restrictions
-
-  
-  ## **Tests**
-  
-  N/A
 
   
   ## **License**

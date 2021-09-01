@@ -28,9 +28,11 @@
   
   ## **Usage**
   
+  [GitHub](https://github.com/Wtrickser/NoteTaker)
+  
   ![Screenshot 1](Pic1.png)
   
-  www.mrpen-notetaker.herokuapp.com/
+  [Heroku](https://mrpen-notetaker.herokuapp.com/)
   
   
   ## **Contributions**
@@ -41,7 +43,5 @@
   
   
   ## **Questions**
-  
-  [GitHub](https://github.com/Wtrickser/NoteTaker)
   
   Questions or issues, contact wtrickster at JSPenland97@gmail.com
